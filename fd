@@ -1,0 +1,18 @@
+[33mcommit b89d6ad2d2d3024c52482f8860f009dfeb4f979d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 7832206 f593a33
+Author: Bodzio <nowakbogumil@gmail.com>
+Date:   Mon Jun 24 19:39:29 2024 +0200
+
+    create another subpage
+
+[33mcommit f593a330b8abbaa180e4d229f4e4b1199c2a1333[m
+Author: BogumilN <90416461+BogumilN@users.noreply.github.com>
+Date:   Mon Jun 24 17:30:11 2024 +0200
+
+    Initial commit
+
+[33mcommit 78322064b256eebcbc5b55eb260e8a7d8c624256[m
+Author: Bodzio <nowakbogumil@gmail.com>
+Date:   Fri Jun 21 19:56:16 2024 +0200
+
+    strawberry landing-page

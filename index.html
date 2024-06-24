@@ -31,14 +31,11 @@
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            /* flex-grow: 1; */
             max-width: 1000px;
             min-width: 800px;
             width: 80%;
             background-color: #f8f3f3;
             box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-            /* height: 100%; */
-            border: 2px solid yellow;
             height: fit-content;
         }
 
@@ -48,14 +45,15 @@
         }
 
         header img {
+            border-radius: 8px;
             width: 100%;
             height: 100%;
         }
 
         nav {
             position: absolute;
-            top: 4%;
-            right: 5%;
+            top: 2%;
+            right: 4%;
             width: 280px;
         }
 
@@ -98,18 +96,40 @@
         }
 
         .slid-banner {
-            border: 1px solid black;
             height: auto;
             width: 80%;
             margin: 0 auto;
         }
 
         .slid-banner img {
+            border-radius: 8px;
             width: 100%;
         }
 
         .slide {
             animation: slide 5s infinite;
+        }
+
+        .oferta {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .dojazd {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .kontakt {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .input-button {
+            text-align: center;
         }
 
         @keyframes slide {
@@ -126,27 +146,20 @@
 
         @media (max-width: 360px) {
             body {
-                /* justify-content: flex-start; */
                 background-size: 20%;
             }
 
             .container {
-                /* border: 3px solid yellow; */
                 width: 100vw;
                 max-width: 80vw;
                 min-width: unset;
                 height: 100vh;
-                /* height: auto; */
                 box-shadow: 0px 0px 3px 0px black;
             }
 
             header {
                 position: relative;
                 height: auto;
-                /* border: 1px solid black; */
-                /* margin-top: 20%; */
-                /* position: absolute; */
-                /* top: 10%; */
                 padding-bottom: 60px;
             }
 
@@ -155,7 +168,6 @@
             }
 
             nav {
-                /* border: 1px solid black; */
                 position: absolute;
                 width: 100%;
                 /* display: flex; */
@@ -181,9 +193,9 @@
             <img src="img/truskawa-header2.jpg" alt="Header image description">
             <nav>
                 <ul>
-                    <li><span>oferta</span></li>
-                    <li><span>dojazd</span></li>
-                    <li><span>kontakt</span></li>
+                    <li><span><a class="oferta" href="./oferta.html">oferta</a></span></li>
+                    <li><span><a class="oferta" href="./dojazd.html">dojazd</a></span></li>
+                    <li><span><a class="oferta" href="./kontakt.html">kontakt</a></span></li>
                 </ul>
             </nav>
         </header>
@@ -193,9 +205,16 @@
         <div class="slid-banner">
             <img class="slide" src="./img-strawberry/basket.jpg" alt="">
         </div>
-        <section class="input"></section>
+        <section class="input-button">
+            <input type="radio" name="banner" id="radio1" checked>
+            <input type="radio" name="banner" id="radio2">
+            <input type="radio" name="banner" id="radio3">
+            <input type="radio" name="banner" id="radio4">
+        </section>
     </div>
     <script src="./js/banner.js"></script>
+    <script src="./js/input-radio.js"></script>
+
 </body>
 
 </html>
