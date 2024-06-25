@@ -51,37 +51,38 @@
         }
 
         nav {
-            position: absolute;
-            top: 2%;
-            right: 4%;
-            width: 280px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
+
         }
 
-        nav li {
+        a {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            border: 1px solid black;
             cursor: pointer;
-            color: white;
-            padding: 10px;
+            color: black;
+            padding: 5px;
             border-radius: 8px;
-            background-color: #a74c4c;
+            text-decoration: none;
+            text-transform: capitalize;
+            box-shadow: 0px 0px 5px 0px black;
         }
 
-        nav li:hover {
-            transition: 0.5s;
-            background-color: #773f3f;
-            padding: 11px 10px;
+        a img {
+            width: 30%;
+            margin-right: 20px;
         }
+
+
 
         .s-first {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-evenly;
             align-items: center;
             width: 100%;
             height: 40vh;
@@ -91,8 +92,8 @@
         h2 {
             padding: 20px;
             text-align: center;
-            font-size: 1.4rem;
-            color: #773f3f;
+            font-size: 1.6rem;
+            /* color: #773f3f; */
         }
 
         .slid-banner {
@@ -110,25 +111,8 @@
             animation: slide 5s infinite;
         }
 
-        .oferta {
-            text-decoration: none;
-            color: white;
-            text-transform: capitalize;
-        }
-
-        .dojazd {
-            text-decoration: none;
-            color: white;
-            text-transform: capitalize;
-        }
-
-        .kontakt {
-            text-decoration: none;
-            color: white;
-            text-transform: capitalize;
-        }
-
         .input-button {
+            margin-top: 30px;
             text-align: center;
         }
 
@@ -143,6 +127,8 @@
                 opacity: 1;
             }
         }
+
+
 
         @media (max-width: 360px) {
             body {
@@ -160,7 +146,7 @@
             header {
                 position: relative;
                 height: auto;
-                padding-bottom: 60px;
+                /* padding-bottom: 60px; */
             }
 
             header img {
@@ -168,15 +154,54 @@
             }
 
             nav {
-                position: absolute;
-                width: 100%;
-                /* display: flex; */
-                /* justify-content: space-around; */
-                left: 0;
-                top: 75%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                /* border: 1px solid black; */
             }
 
-            .s-first {
+            a {
+                /* height: 50px;
+                width: 50px; */
+                /* height: 50px; */
+                display: flex;
+                flex-direction: column-reverse;
+                font-size: 0.85rem;
+            }
+
+            .i img {
+                padding: 1px;
+                /* position: absolute; */
+            }
+
+            .oferta,
+            .kontakt {
+                height: 60px;
+
+            }
+
+            .oferta img,
+            .kontakt img {
+                margin-top: 8px;
+            }
+
+            a img {
+                width: 50%;
+                /* margin-top: 10px; */
+                margin-right: 0px;
+            }
+
+            /* nav {
+                position: absolute;
+                width: 100%;
+                /* display: flex;
+                */
+            /* justify-content: space-around; */
+            /* left: 0;
+            top: 75%;
+        } */
+
+            */ .s-first {
                 height: auto;
             }
 
@@ -191,15 +216,20 @@
     <div class="container">
         <header>
             <img src="img/truskawa-header2.jpg" alt="Header image description">
-            <nav>
-                <ul>
-                    <li><span><a class="oferta" href="./oferta.html">oferta</a></span></li>
-                    <li><span><a class="oferta" href="./dojazd.html">dojazd</a></span></li>
-                    <li><span><a class="oferta" href="./kontakt.html">kontakt</a></span></li>
-                </ul>
-            </nav>
+
         </header>
         <section class="s-first">
+            <nav>
+                <a class="oferta i" href="./oferta.html">
+                    <img src='./img/strawberry-button.png' alt="Oferta Icon"> oferta
+                </a>
+                <a class="dojazd i" href="./dojazd.html">
+                    <img src="img/map.png" alt="Dojazd Icon"> dojazd
+                </a>
+                <a class="kontakt i" href="./kontakt.html">
+                    <img src="img/contact.png" alt="Kontakt Icon"> kontakt
+                </a>
+            </nav>
             <h2>Zapraszamy na prozdrowotne i ekologiczne uprawy</h2>
         </section>
         <div class="slid-banner">
